@@ -1,4 +1,3 @@
-import './asset/logo/logo.svg'
 import './component/Card'
 import './asset/menu-option/veggies/veggies.png'
 
