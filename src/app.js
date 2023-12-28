@@ -1,5 +1,10 @@
+import './asset/logo/logo.svg'
 import './component/Card'
 import './asset/menu-option/veggies/veggies.png'
+
+const img = document.createElement('img')
+img.src = './asset/logo.svg'
+document.body.insertAdjacentElement('afterbegin', img)
 
 const entryPoint = document.querySelector('#content')
 
