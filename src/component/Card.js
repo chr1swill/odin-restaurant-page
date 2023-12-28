@@ -13,7 +13,11 @@ class Card extends HTMLElement {
         if(newValue === null) {
             this.handleNullAttributes(name)
             return
-        }
+        } else if(oldValue === newValue) {
+            return
+        } else if(!isNaN(name)) {
+            console.error(`${name} is not a valid attribute`)
+        } 
 
         switch(name) {
             case 'imgSrc':
@@ -148,3 +152,5 @@ class Card extends HTMLElement {
         this.shadowRoot.appendChild(this.template.cloneNode(true))
     }
 }
+
+customeElements.define('card-component', Card);
