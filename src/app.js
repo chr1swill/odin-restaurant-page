@@ -1,6 +1,5 @@
-console.log('Hello, World!');
-document.body.style.backgroundColor = 'red';
-const img = './asset/menu-option/greek-salad/greek-salad.png';
+import './component/Card'
+
 document.body.innerHTML = `
 <h1>Hello, World!</h1>
 <h2>Hello, World!</h2>
@@ -8,5 +7,5 @@ document.body.innerHTML = `
 <h4>Hello, World!</h4>
 <h5>Hello, World!</h5>
 <h6>Hello, World!</h6>
-<img src='${img}' alt='logo'>
+<card-component></card-component>
 `;

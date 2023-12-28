@@ -7,26 +7,8 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ (() => {
-
-eval("console.log('Hello, World!');\ndocument.body.style.backgroundColor = 'red';\nconst img = './asset/menu-option/greek-salad/greek-salad.png';\ndocument.body.innerHTML = `\n<h1>Hello, World!</h1>\n<h2>Hello, World!</h2>\n<h3>Hello, World!</h3>\n<h4>Hello, World!</h4>\n<h5>Hello, World!</h5>\n<h6>Hello, World!</h6>\n<img src='${img}' alt='logo'>\n`;\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
-
-/***/ })
-
-/******/ 	});
-/************************************************************************/
+/******/ 	"use strict";
 /******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	
 /******/ })()
 ;
