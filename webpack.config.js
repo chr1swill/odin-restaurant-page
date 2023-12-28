@@ -7,6 +7,7 @@ module.exports = {
     output: {
         filename: './main.js',
         path: path.resolve(__dirname, 'dist'),
+        publicPath: '/'  // You might need to adjust this depending on your server setup
     },
     module: {
         rules: [
@@ -16,7 +17,19 @@ module.exports = {
             },
             {
                 test: /\.(png|webp|svg|jpg|gif)$/,
-                use: ['file-loader']
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            // This ensures the path of the file is preserved in the output directory
+                            name: '[path][name].[ext]', 
+                            // Adjust this path to match your desired output structure
+                            outputPath: 'assets/',  
+                            // Ensures that the public URL will be correct in your HTML/CSS files
+                            publicPath: 'assets/'  
+                        }
+                    }
+                ]
             },
             {
                 test: /\.html$/,
