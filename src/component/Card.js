@@ -6,7 +6,7 @@ class Card extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return ['imgSrc', 'imgAlt', 'title', 'text', 'background']
+        return ['imgsrc', 'imgalt', 'title', 'text', 'background']
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
@@ -20,10 +20,10 @@ class Card extends HTMLElement {
         } 
 
         switch(name) {
-            case 'imgSrc':
+            case 'imgsrc':
                 this.updateImgSrc(newValue)
                 break
-            case 'imgAlt':
+            case 'imgalt':
                 this.updateImgAlt(newValue)
                 break
             case 'title':
@@ -82,11 +82,11 @@ class Card extends HTMLElement {
 
     handleNullAttributes(name) {
         switch(name) {
-            case 'imgSrc':
+            case 'imgsrc':
                 const img = this.shadowRoot.querySelector('img')
                 img.remove()
                 break
-            case 'imgAlt': 
+            case 'imgalt': 
                 img.alt = 'an image of something very nice'
                 break
             case 'title':
