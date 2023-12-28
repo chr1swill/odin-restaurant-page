@@ -1,0 +1,13 @@
+list of what is will do 
+
+- figure out how to get images to show properly 
+
+- think more about how you will us compoenet bc color and how it will affext the contrast on the text and title
+(should they change color as well, should the background always be one color, how will i use it most )
+
+- make the views and then style them after
+
+- add a styles sheet with the css vars and and a global style sheet
+(should i link the vars stylesheet in the Card component)
+
+- add a dark mode option
