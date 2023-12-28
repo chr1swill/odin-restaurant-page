@@ -22,11 +22,11 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             // This ensures the path of the file is preserved in the output directory
-                            name: '[path][name].[ext]', 
+                            name: '[name].[ext]', 
                             // Adjust this path to match your desired output structure
-                            outputPath: '/',  
+                            outputPath: 'asset/',  
                             // Ensures that the public URL will be correct in your HTML/CSS files
-                            publicPath: '/'  
+                            publicPath: 'asset/'  
                         }
                     }
                 ]
