@@ -153,4 +153,4 @@ class Card extends HTMLElement {
     }
 }
 
-customeElements.define('card-component', Card);
+customElements.define('card-component', Card);
