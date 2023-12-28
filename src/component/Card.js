@@ -2,7 +2,6 @@ class Card extends HTMLElement {
     constructor() {
         super();
         this.shadowRoot = this.attachShadow({ mode: 'open' });
-        this.template = document.createElement('template') 
     }
 
     static get observedAttributes() {
@@ -15,9 +14,7 @@ class Card extends HTMLElement {
             return
         } else if(oldValue === newValue) {
             return
-        } else if(!isNaN(name)) {
-            console.error(`${name} is not a valid attribute`)
-        } 
+        }
 
         switch(name) {
             case 'imgsrc':
@@ -46,35 +43,35 @@ class Card extends HTMLElement {
     }
 
     updateImgSrc(newValue) {
-        const img = this.shadowRoot.querySelector('img')
+        const img = this.shadowRoot.querySelector('data-img')
         if(img) {
             img.src = newValue
         }
     }
 
     updateImgAlt(newValue) {
-        const img = this.shadowRoot.querySelector('img')
+        const img = this.shadowRoot.querySelector('data-img')
         if(img) {
             img.alt = newValue
         }
     }
 
     updateTitle(newValue) {
-        const h2 = this.shadowRoot.querySelector('h2')
+        const h2 = this.shadowRoot.querySelector('data-title')
         if(h2) {
             h2.textContent = newValue 
         } 
     }
 
     updateText(newValue) {
-        const p = this.shadowRoot.querySelector('p')
+        const p = this.shadowRoot.querySelector('data-text')
         if(p) {
             p.textContent = newValue
         }
     }
 
     updateBackground(newValue) {
-        const bg = this.shadowRoot.querySelector('section')
+        const bg = this.shadowRoot.querySelector('data-background')
         if(bg) {
             bg.style.backgroundColor = newValue
         }
@@ -83,22 +80,22 @@ class Card extends HTMLElement {
     handleNullAttributes(name) {
         switch(name) {
             case 'imgsrc':
-                const img = this.shadowRoot.querySelector('img')
+                const img = this.shadowRoot.querySelector('data-img')
                 img.remove()
                 break
             case 'imgalt': 
                 img.alt = 'an image of something very nice'
                 break
             case 'title':
-                const h2 = this.shadowRoot.querySelector('h2')
+                const h2 = this.shadowRoot.querySelector('data-title')
                 h2.remove()
                 break
             case 'text':
-                const p = this.shadowRoot.querySelector('p')
+                const p = this.shadowRoot.querySelector('data-text')
                 p.remove()
                 break
             case 'background':
-                const parent = document.getElementById('section');
+                const parent = this.shadowRoot.querySelector('data-background');
 
                 while (parent.firstChild) {
                     parent.parentNode.insertBefore(parent.firstChild, parent);
@@ -113,7 +110,7 @@ class Card extends HTMLElement {
     }
 
     render() {
-        this.template.innerText = `
+        this.shadowRoot.innerText = `
             <style>
                 section {
                     --padding: 20px;
@@ -143,13 +140,12 @@ class Card extends HTMLElement {
                     font-size: 16px;
                 }
             </style>
-            <section>
-                <img src='' alt=''>
-                <h2></h2>
-                <p></p>
+            <section data-background>
+                <img data-img>
+                <h2 data-title></h2>
+                <p data-text></p>
             </section>
         `
-        this.shadowRoot.appendChild(this.template.cloneNode(true))
     }
 }
 
