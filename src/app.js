@@ -10,7 +10,7 @@ entryPoint.innerHTML = `
 <card-component
 title="Hello, World!"
 text="Hello, World!"
-imgsrc='./asset/menu-option/veggies/veggies.png'
+imgsrc='./asset/veggies.png'
 imgalt='an image of that'
 background='black'
 ></card-component>
