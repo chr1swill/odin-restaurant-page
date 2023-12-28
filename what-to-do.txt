@@ -1,7 +1,5 @@
 list of what is will do 
 
-- figure out how to get images to show properly 
-
 - think more about how you will us compoenet bc color and how it will affext the contrast on the text and title
 (should they change color as well, should the background always be one color, how will i use it most )
 
