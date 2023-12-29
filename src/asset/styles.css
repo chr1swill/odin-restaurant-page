@@ -64,3 +64,9 @@ h6 {
 :root {
 
 }
+
+body, header, main{
+    display: grid;
+    place-content: center;
+}
+
