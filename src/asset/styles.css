@@ -62,11 +62,57 @@ h6 {
 }
 
 :root {
+    --font-family: 'Open Sans', sans-serif;
 
+    --fs-100: clamp(0.5625rem, 0.5379rem + 0.1228vw, 0.6331rem);
+    --fs-200: clamp(0.75rem, 0.7174rem + 0.163vw, 0.8438rem);
+    --fs-300: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+    --fs-400: clamp(1.3331rem, 1.2753rem + 0.2891vw, 1.4994rem);
+    --fs-500: clamp(1.7769rem, 1.6997rem + 0.3859vw, 1.9988rem);
+    --fs-600: clamp(2.3688rem, 2.2659rem + 0.5141vw, 2.6644rem);
+    --fs-700: clamp(3.1575rem, 3.0203rem + 0.6859vw, 3.5519rem);
+    --fs-800: clamp(4.2088rem, 4.0257rem + 0.9152vw, 4.735rem);    
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
 }
 
-body, header, main{
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --text: #110802;
+        --background: #fdf7f3;
+        --primary: #e26e21;
+        --secondary: #e6ee80;
+        --accent: #bde851;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #fdf3ed;
+        --background: #0d0702;
+        --primary: #dd6a1d;
+        --secondary: #767e11;
+        --accent: #85b017;
+    }
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-family);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-400);
+}
+
+body, header, main {
     display: grid;
     place-content: center;
 }
+
 
