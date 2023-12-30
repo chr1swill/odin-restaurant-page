@@ -1,7 +1,6 @@
 list of what is will do 
 
-- think more about how you will us compoenet bc color and how it will affext the contrast on the text and title
-(should they change color as well, should the background always be one color, how will i use it most )
+- make it so all you card components are styles like with the background the same colore as page background us shadow to add some depth
 
 - make the views and then style them after
 
