@@ -1,3 +1,4 @@
+import './asset/styles.css'
 import './component/Card'
 import './asset/menu-option/veggies/veggies.png'
 
