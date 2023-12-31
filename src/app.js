@@ -16,5 +16,40 @@ if(!entryPoint) {
                     background='black'
                  >
                  </card-component>
+                 <card-component
+                    title="Hello, World!"
+                    text="Hello, World!"
+                    imgsrc='./asset/veggies.png'
+                    imgalt='an image of that'
+                    background='black'
+                 >
+                 </card-component>
+
+                 <card-component
+                    title="Hello, World!"
+                    text="Hello, World!"
+                    imgsrc='./asset/veggies.png'
+                    imgalt='an image of that'
+                    background='black'
+                 >
+                 </card-component>
+
+                 <card-component
+                    title="Hello, World!"
+                    text="Hello, World!"
+                    imgsrc='./asset/veggies.png'
+                    imgalt='an image of that'
+                    background='black'
+                 >
+                 </card-component>
+
+                 <card-component
+                    title="Hello, World!"
+                    text="Hello, World!"
+                    imgsrc='./asset/veggies.png'
+                    imgalt='an image of that'
+                    background='black'
+                 >
+                 </card-component>
               `
 }
