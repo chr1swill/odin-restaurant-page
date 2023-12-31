@@ -80,7 +80,6 @@ h6 {
     --fw-700: 700;
 }
 
-
 @media (prefers-color-scheme: light) {
     :root {
         --text: #110802;
@@ -102,19 +101,38 @@ h6 {
 
 
 body {
+    height: 100svh;
     background-color: var(--background);
     color: var(--text);
     font-family: var(--font-family);
     font-size: var(--fs-300);
     font-weight: var(--fw-400);
+    margin: 0px 0px 32px 0px;
 }
 
 body, header, main {
     display: grid;
-    place-content: center;
+    place-items: center;
+}
+
+header > .logo {
+    padding: 32px 0px;
+    width: 100%;
+    height: auto;
+
+    &g {
+        fill: var(--text);
+    }
 }
 
 main {
-    max-width: calc(100% - 2rem);
+    max-width: min(1400px, calc(100% - 4rem));
+    margin: 0px 0px 32px 0px;
+
+    & > * {
+        max-width: 100%;
+        height: auto;
+    }
 }
+
 
