@@ -8,7 +8,7 @@ class Card extends HTMLElement {
         --padding: 20px;
         --img-br: 10px;
         max-width: 100%;
-        height: 100%;
+        height: auto;
         padding: var(--padding);
         display: grid;
         place-content: center;
@@ -18,7 +18,6 @@ class Card extends HTMLElement {
         img {
         width: 100%;
         height: auto;
-        aspect-ratio: 16/9;
         border-radius: var(--img-br);
         }
 
