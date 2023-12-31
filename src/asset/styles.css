@@ -145,10 +145,16 @@ main {
 
 #content {
     max-width: 100%;
-    height: min(900px, 80svh);
+    height: min(800px, 75svh);
+    background-color: var(--background);
+    border-radius: var(--br-md);
     margin: var(--bottom-margin);
     overflow: hidden;
     overflow-y: scroll;
+}
+
+#content::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-container {
