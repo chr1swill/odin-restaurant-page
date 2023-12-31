@@ -7,7 +7,7 @@ class Card extends HTMLElement {
         section {
         --padding: 20px;
         --img-br: 10px;
-        width: 100%;
+        max-width: 100%;
         height: 100%;
         padding: var(--padding);
         display: grid;
