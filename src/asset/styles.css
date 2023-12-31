@@ -78,6 +78,9 @@ h6 {
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
+
+    --bm: 32px;
+    --bottom-margin: 0px 0px var(--bm) 0px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -107,7 +110,7 @@ body {
     font-family: var(--font-family);
     font-size: var(--fs-300);
     font-weight: var(--fw-400);
-    margin: 0px 0px 32px 0px;
+    margin: var(--bottom-margin);
 }
 
 body, header, main {
@@ -127,7 +130,7 @@ header > .logo {
 
 main {
     max-width: min(1400px, calc(100% - 4rem));
-    margin: 0px 0px 32px 0px;
+    margin: var(--bottom-margin);
 
     & > * {
         max-width: 100%;
@@ -135,4 +138,6 @@ main {
     }
 }
 
-
+#content {
+    margin: var(--bottom-margin);
+}
