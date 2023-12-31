@@ -79,6 +79,11 @@ h6 {
     --fw-600: 600;
     --fw-700: 700;
 
+    --br-sm: 8px;
+    --br-md: 12px;
+    --br-lb: 16px;
+
+
     --bm: 32px;
     --bottom-margin: 0px 0px var(--bm) 0px;
 }
@@ -123,7 +128,7 @@ header > .logo {
     width: 100%;
     height: auto;
 
-    &g {
+    & g {
         fill: var(--text);
     }
 }
@@ -144,4 +149,25 @@ main {
     margin: var(--bottom-margin);
     overflow: hidden;
     overflow-y: scroll;
+}
+
+.nav-container {
+    --radius: var(--br-sm);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: none;
+    margin: var(--bottom-margin);
+
+    & button {
+        padding: 12px 24px;
+        border: none;
+    }
+
+    & button[data-nav="home"] {
+        border-radius: var(--radius) 0px 0px var(--radius);     
+    }
+
+    & button[data-nav="menu"] {
+        border-radius: 0px var(--radius) var(--radius) 0px;     
+    }
 }
