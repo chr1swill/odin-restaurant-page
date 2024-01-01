@@ -158,6 +158,7 @@ main {
     margin: var(--bottom-margin);
     overflow: hidden;
     overflow-y: scroll;
+    box-shadow: var(--box-shadow);
 }
 
 #content::-webkit-scrollbar {
