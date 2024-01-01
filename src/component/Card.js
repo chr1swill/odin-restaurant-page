@@ -13,6 +13,7 @@ export const cardComponent = (imgSrc, imgAlt, title, description) => {
                 <img data-component="image"
                     src="${imgSrc}"
                     alt="${imgAlt}"
+                    loading="lazy"
                 >
                 <h2 data-component="title" class='h3'>${title}</h2>
                 <p data-component="description" class='p'>${description}</p>
