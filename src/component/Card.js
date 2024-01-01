@@ -14,7 +14,7 @@ export const cardComponent = (imgSrc, imgAlt, title, description) => {
                     src="${imgSrc}"
                     alt="${imgAlt}"
                 >
-                <h2 data-component="title">${title}</h2>
+                <h2 data-component="title" class='.h3'>${title}</h2>
                 <p data-component="description">${description}</p>
             </section>
     ` 
