@@ -254,6 +254,10 @@ main {
     display: none;
 }
 
+.bottom-margin {
+    margin: var(--bottom-margin);
+}
+
 .nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
