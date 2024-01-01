@@ -120,6 +120,7 @@ ul {
 }
 
 .big-text, 
+.btn-text,
 .h1, h1, 
 .h2, h2, 
 .h3, h3, 
@@ -134,6 +135,11 @@ ul {
 .big-text {
     font-weight: var(--fw-800);
     font-size: var(--fs-700);
+}
+
+.btn-text {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-300);
 }
 
 h1, .h1 {
@@ -176,8 +182,6 @@ body {
     background-color: var(--background);
     color: var(--text);
     font-family: var(--font-family);
-    font-size: var(--fs-300);
-    font-weight: var(--fw-400);
     margin: var(--bottom-margin);
 }
 
