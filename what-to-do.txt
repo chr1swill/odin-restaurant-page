@@ -1,12 +1,9 @@
 list of what is will do 
 
-- make it so all you card components are styles like with the background the same colore as page 
+- make the #content section have the css border trick
 
 - add scroll indecator to #content and shadow to add some depth
 
 - make the views and then style them after
 
-- add a styles sheet with the css vars and and a global style sheet
-(should i link the vars stylesheet in the Card component)
-
-- add a dark mode option
+- add a dark mode option button
