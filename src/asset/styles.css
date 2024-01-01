@@ -77,7 +77,6 @@ ul {
     --fs-600: clamp(2.3688rem, 2.2659rem + 0.5141vw, 2.6644rem);
     --fs-700: clamp(3.1575rem, 3.0203rem + 0.6859vw, 3.5519rem);
     --fs-800: clamp(4.2088rem, 4.0257rem + 0.9152vw, 4.735rem);    
-
     --fw-300: 300;
     --fw-400: 400;
     --fw-500: 500;
@@ -88,7 +87,6 @@ ul {
     --br-md: 12px;
     --br-lg: 16px;
 
-
     --bm: 32px;
     --bottom-margin: 0px 0px var(--bm) 0px;
 
@@ -97,7 +95,6 @@ ul {
     --text-opacity: 0.2;
     --text-rgba: rgba(17, 8, 2, var(--text-opacity));
     --box-shadow: 0px 6px 12px 0px var(--text-rgba);
-
 }
 
 @media (prefers-color-scheme: light) {
