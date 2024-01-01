@@ -2,7 +2,6 @@ import './asset/styles.css'
 import './component/Card'
 import { homePage } from './view/home'
 import './view/menu'
-import './asset/menu-option/veggies/veggies.png'
 
 const entryPoint = document.querySelector('#content')
 const homeBtn = document.querySelector('[data-nav="home"]')
