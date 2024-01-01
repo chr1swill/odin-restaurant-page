@@ -1,1 +1,14 @@
-(()=>{"use strict";var r,t={356:(r,t,e)=>{r.exports=e.p+"79be0df82efd383af5c6.png"}},e={};function o(r){var i=e[r];if(void 0!==i)return i.exports;var n=e[r]={exports:{}};return t[r](n,n.exports,o),n.exports}o.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(r){if("object"==typeof window)return window}}(),(()=>{var r;o.g.importScripts&&(r=o.g.location+"");var t=o.g.document;if(!r&&t&&(t.currentScript&&(r=t.currentScript.src),!r)){var e=t.getElementsByTagName("script");if(e.length)for(var i=e.length-1;i>-1&&!r;)r=e[i--].src}if(!r)throw new Error("Automatic publicPath is not supported in this browser");r=r.replace(/#.*$/,"").replace(/\?.*$/,"").replace(/\/[^\/]+$/,"/"),o.p=r})(),r=o(356),console.log("Hello, world!"),document.getElementById("my-image").src=r.default.default})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	
+/******/ 	
+/******/ })()
+;
