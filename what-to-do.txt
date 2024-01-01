@@ -1,5 +1,3 @@
 list of what is will do 
 
-- make the views and then style them after
-
-- add a dark mode option button
+- make scroll indecator
