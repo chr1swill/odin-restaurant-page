@@ -13,12 +13,14 @@ import '../asset/characters/darryl.png'
  */
 const cardComponent = (imgSrc, imgAlt, title, description) => {
     return `
-            <card-component 
-                imgsrc="${imgSrc}"
-                imgalt="${imgAlt}"
-                title="${title}"
-                text="${description}"
-            ></card-component>
+            <section data-id="card">
+                <img data-img
+                    src="${imgSrc}"
+                    alt="${imgAlt}"
+                >
+                <h2 data-title>${title}</h2>
+                <p data-text>${description}</p>
+            </section>
     ` 
 }
 
