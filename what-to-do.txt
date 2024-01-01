@@ -1,9 +1,5 @@
 list of what is will do 
 
-- make the #content section have the css border trick
-
-- add scroll indecator to #content and shadow to add some depth
-
 - make the views and then style them after
 
 - add a dark mode option button
