@@ -9,13 +9,13 @@
  */
 export const cardComponent = (imgSrc, imgAlt, title, description) => {
     return `
-            <section data-id="card">
-                <img data-img
+            <section data-component="card">
+                <img data-component="image"
                     src="${imgSrc}"
                     alt="${imgAlt}"
                 >
-                <h2 data-title>${title}</h2>
-                <p data-text>${description}</p>
+                <h2 data-component="title">${title}</h2>
+                <p data-component="description">${description}</p>
             </section>
     ` 
 }

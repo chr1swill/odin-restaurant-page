@@ -203,9 +203,9 @@ main {
 }
 
 /* Card Component Styles */
-section {
+[data-component="card"] {
     --padding: 20px;
-    --img-br: 10px;
+    --img-br: var(--br-sm);
     max-width: 100%;
     height: auto;
     padding: var(--padding);
@@ -213,13 +213,15 @@ section {
     place-content: center;
     border-radius: calc(var(--img-br) + var(--padding));
     background-color: var(--background);
+    box-shadow: var(--box-shadow);
+
+    & img {
+        width: 100%;
+        height: auto;
+        border-radius: var(--img-br);
+    }
 }
 
-img {
-    width: 100%;
-    height: auto;
-    border-radius: var(--img-br);
-}
 
 h2, p {
     color: var(--text);
@@ -232,5 +234,5 @@ h2 {
 
 p {
     font-weight: var(--fw-300);
-    font-size: var(--fs-200);
+    font-size: var(--fs-300);
 }
