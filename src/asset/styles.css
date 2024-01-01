@@ -199,7 +199,7 @@ main {
 .two-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    gap: var(--bm);
 }
 
 /* Card Component Styles */
@@ -214,6 +214,10 @@ main {
     border-radius: calc(var(--img-br) + var(--padding));
     background-color: var(--background);
     box-shadow: var(--box-shadow);
+
+    & > * {
+        margin: var(--bottom-margin);
+    }
 
     & img {
         width: 100%;
