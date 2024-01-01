@@ -61,6 +61,11 @@ h6 {
     isolation: isolate;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 :root {
     --font-family: 'Open Sans', sans-serif;
 
@@ -156,6 +161,7 @@ main {
     background-color: var(--background);
     border-radius: var(--br-md);
     margin: var(--bottom-margin);
+    padding: 32px;
     overflow: hidden;
     overflow-y: scroll;
     box-shadow: var(--box-shadow);
@@ -195,3 +201,4 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
 }
+
