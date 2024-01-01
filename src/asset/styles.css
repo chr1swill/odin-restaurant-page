@@ -208,15 +208,46 @@ main {
 }
 
 #content {
+    --card-padding: 20px;
+    --img-br: var(--br-sm);
+    --content-padding: 32px;
+    --card-br: calc(var(--img-br) + var(--card-padding));
+
     max-width: 100%;
     height: min(800px, 75svh);
     background-color: var(--background);
-    border-radius: var(--br-lg);
+    border-radius: calc(var(--card-br) + var(--content-padding));
     margin: var(--bottom-margin);
-    padding: 32px;
+    padding: var(--content-padding);
     overflow: hidden;
     overflow-y: scroll;
     box-shadow: var(--box-shadow);
+
+    /* Card Component Styles */
+    & [data-component="card"] {
+        max-width: 100%;
+        height: auto;
+        padding: var(--card-padding);
+        display: grid;
+        place-content: center;
+        border-radius: var(--card-br);
+        background-color: var(--background);
+        box-shadow: var(--box-shadow);
+
+        & > * {
+            margin: var(--bottom-margin);
+        }
+
+        & img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--img-br);
+        }
+
+        & p {
+            margin: 0;
+        }
+    }
 }
 
 #content::-webkit-scrollbar {
@@ -252,32 +283,4 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--bm);
-}
-
-/* Card Component Styles */
-[data-component="card"] {
-    --padding: 20px;
-    --img-br: var(--br-sm);
-    max-width: 100%;
-    height: auto;
-    padding: var(--padding);
-    display: grid;
-    place-content: center;
-    border-radius: calc(var(--img-br) + var(--padding));
-    background-color: var(--background);
-    box-shadow: var(--box-shadow);
-
-    & > * {
-        margin: var(--bottom-margin);
-    }
-
-    & img {
-        width: 100%;
-        height: auto;
-        border-radius: var(--img-br);
-    }
-
-    & p {
-        margin: 0;
-    }
 }
