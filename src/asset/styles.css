@@ -202,3 +202,35 @@ main {
     gap: 24px;
 }
 
+/* Card Component Styles */
+section {
+    --padding: 20px;
+    --img-br: 10px;
+    max-width: 100%;
+    height: auto;
+    padding: var(--padding);
+    display: grid;
+    place-content: center;
+    border-radius: calc(var(--img-br) + var(--padding));
+    background-color: var(--background);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--img-br);
+}
+
+h2, p {
+    color: var(--text);
+}
+
+h2 {
+    font-weight: var(--fw-600);
+    font-size: var(--fs-400);
+}
+
+p {
+    font-weight: var(--fw-300);
+    font-size: var(--fs-200);
+}
