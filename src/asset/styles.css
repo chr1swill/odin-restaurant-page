@@ -279,4 +279,8 @@ main {
         height: auto;
         border-radius: var(--img-br);
     }
+
+    & p {
+        margin: 0;
+    }
 }
