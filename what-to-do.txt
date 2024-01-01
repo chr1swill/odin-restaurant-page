@@ -1,8 +1,8 @@
 list of what is will do 
 
-- add scroll indecator to #content and shadow to add some depth
-
 - make it so all you card components are styles like with the background the same colore as page background us shadow to add some depth
+
+- add scroll indecator to #content and shadow to add some depth
 
 - make the views and then style them after
 
