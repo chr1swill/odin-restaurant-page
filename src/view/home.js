@@ -5,7 +5,7 @@ import '../asset/characters/darryl.png'
 export const homePage = () => {
     return `
         <section data-id="home">
-            <h1 class=".h1">Welcome to our Restaurant Page!</h1>
+            <h1 class="h2">Welcome to our Restaurant Page!</h1>
             <ul class="two-column-grid">
                 <li>
                     ${cardComponent(
