@@ -86,7 +86,7 @@ ul {
 
     --br-sm: 8px;
     --br-md: 12px;
-    --br-lb: 16px;
+    --br-lg: 16px;
 
 
     --bm: 32px;
@@ -159,7 +159,7 @@ main {
     max-width: 100%;
     height: min(800px, 75svh);
     background-color: var(--background);
-    border-radius: var(--br-md);
+    border-radius: var(--br-lg);
     margin: var(--bottom-margin);
     padding: 32px;
     overflow: hidden;
