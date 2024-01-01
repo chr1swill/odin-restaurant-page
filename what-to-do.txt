@@ -1,6 +1,6 @@
 list of what is will do 
 
-- make it so all you card components are styles like with the background the same colore as page background us shadow to add some depth
+- make it so all you card components are styles like with the background the same colore as page 
 
 - add scroll indecator to #content and shadow to add some depth
 
