@@ -286,5 +286,6 @@ main {
 .two-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: var(--bm);
     gap: var(--bm);
 }
