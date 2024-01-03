@@ -180,6 +180,7 @@ body {
     color: var(--text);
     font-family: var(--font-family);
     margin: var(--bottom-margin);
+    overflow: hidden;
 }
 
 body, header, main {
